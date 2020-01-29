@@ -16,7 +16,7 @@ namespace EazyBreeze.Core
                 int? number = null;
 
                 for (var i = 0; i < _windows.Count(); i++)
-                    if (_windows[i] == 0)
+                    if (!WindowsIsWorked(_windows[i]))
                         number = i;
 
                 return number;
